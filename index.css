@@ -1,0 +1,53 @@
+.bg {
+  background-image: url("smkn1cilamaya/img7.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*bagian rotate nya arrow*/
+@keyframes bounce-rotate-hover {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(110deg);
+  }
+  50% {
+    transform: rotate(60deg);
+  }
+  75% {
+    transform: rotate(100deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes bounce-rotate-leave {
+  0% {
+    transform: rotate(90deg);
+  }
+  25% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-hover {
+  animation: bounce-rotate-hover 0.8s forwards;
+}
+
+.animate-leave {
+  animation: bounce-rotate-leave 0.8s forwards;
+}
+/*tutup bagian rotate arrow*/

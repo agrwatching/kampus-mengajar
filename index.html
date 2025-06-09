@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Minat Baca - Kampus Mengajar</title>
+    <link rel="icon" href="smkn1cilamaya/logo2.jpg"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="text-gray-800">
+    <nav
+      class="absolute z-20 left-0 right-0 bg-black shadow-md px-8 py-1 flex items-center"
+    >
+      <a href="index.html" class="flex">
+        <img src="smkn1cilamaya/logo3.jpg" alt="logo" class="h-10 mr-4" />
+        <img src="smkn1cilamaya/logo2.jpg" alt="Logo" class="h-10 mr-4" />
+      </a>
+      <!-- Tambahkan ml-auto supaya ke kanan -->
+      <div class="ml-auto text-right">
+        <h1 class="text-xl font-bold text-sky-500">Kampus Merdeka</h1>
+        <p class="text-sm text-gray-400">Belajar, Berkarya, Berinovasi</p>
+      </div>
+    </nav>
+
+    <section
+      class="relative bg h-screen flex flex-col justify-center items-center text-center overflow-hidden"
+    >
+      <div class="absolute top-0 left-0 w-full h-full bg-black/60 z-0"></div>
+      <div class="relative z-10 max-w-full px-4 -mt-4">
+        <h1 class="text-9xl font-bold text-white mb-8">Kampus Mengajar</h1>
+        <h2 class="text-xl font-bold mb-8 text-white">
+          Kampus Mengajar - Meningkatkan literasi bersama.
+        </h2>
+      </div>
+      <div class="absolute bottom-10 left-0 right-0 z-50 px-10">
+        <div class="flex justify-between items-center">
+          <!-- Tombol kiri -->
+          <a
+            href="#next-section"
+            class="group inline-flex items-center gap-2 py-2 px-4 bg-blue-600 text-white hover:text-black rounded shadow-md hover:bg-white transition hover:border-black border-blue-900 border-1"
+            onmouseenter="handleHover(this)"
+            onmouseleave="handleLeave(this)"
+          >
+            <img
+              src="smkn1cilamaya/arrow.png"
+              alt="Panah"
+              class="arrow-img w-8 h-8 rotate-180 rounded-full bg-white"
+            />
+            Selengkapnya
+          </a>
+
+          <!-- Tombol kanan -->
+          <a
+            href="app.html"
+            data-transition="to-app"
+            class="px-6 py-2 text-white rounded-lg font-semibold transition-all duration-300 ease-in-out transform bg-gradient-to-r from-blue-500 to-blue-700 shadow-md hover:shadow-xl hover:scale-105 hover:from-blue-600 hover:to-blue-800"
+          >
+            Kampus Mengajar Angkatan 8
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="next-section" class="bg-white text-gray-800 py-13 px-6">
+      <div class="max-w-full mx-auto text-center">
+        <h2 class="text-7xl font-bold my-20 text-sky-600">
+          Apa itu Kampus Mengajar?
+        </h2>
+        <p class="text-xl my-20 text-justify mx-8">
+          Kampus Mengajar adalah program dari Kementerian Pendidikan Indonesia
+          yang mengajak mahasiswa untuk langsung terjun ke sekolah-sekolah,
+          khususnya di daerah 3T (terdepan, terluar, tertinggal). Dalam program
+          ini, mahasiswa bukan hanya menjadi pengajar bantu, tapi juga menjadi
+          inspirator, motivator, dan agen perubahan. Mereka membawa semangat
+          baru ke ruang-ruang kelas, membantu literasi dan numerasi, serta
+          mendorong kreativitas di lingkungan sekolah. Jika kamu seorang
+          mahasiswa yang ingin melihat langsung dampak nyata dari ilmu yang kamu
+          pelajari — inilah tempatnya. Kampus Mengajar bukan hanya program
+          pengabdian, tapi perjalanan hidup yang akan membentuk karakter dan
+          wawasanmu.
+        </p>
+      </div>
+    </section>
+    <div id="footer"></div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

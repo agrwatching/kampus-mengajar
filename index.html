@@ -9,38 +9,38 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body class="text-gray-800">
-    <nav
-      class="absolute z-20 left-0 right-0 bg-gray-900 shadow-lg px-8 py-4 flex items-center sticky top-0 transition duration-300 ease-in-out"
-    >
-      <a href="index.html" class="flex ml-4">
-        <img src="smkn1cilamaya/logo twh.webp" alt="logo" class="h-12 mr-4" />
-        <div class="">
-          <h2 class="font-bold text-white">Kampus Mengajar</h2>
-          <p class="text-gray-400">Angkatan 8</p>
-        </div>
-      </a>
-      <!-- Tambahkan ml-auto supaya ke kanan -->
-      <!-- Navbar kanan -->
-      <div class="ml-auto text-right mr-4 flex items-center space-x-4">
-        <!-- Tombol Login -->
-        <a id="login-btn" href="#"
-          onclick="handleGoogleLogin()"
-          class="text-white font-semibold px-4 py-2 rounded transition duration-100
-                bg-gradient-to-r from-blue-500 to-green-500 
-                hover:from-blue-700 hover:to-green-700">
-          Login dengan Google
-        </a>
+    <nav class="z-20 left-0 right-0 bg-gray-900 shadow-lg px-4 py-2 flex justify-between items-center flex-wrap sticky top-0">
+  <!-- Kiri: Logo -->
+  <a href="index.html" class="flex items-center space-x-2">
+    <img src="smkn1cilamaya/logo twh.webp" alt="logo" class="h-8 sm:h-10" />
+    <div class="leading-tight">
+      <h2 class="text-white font-semibold text-sm sm:text-base">Kampus Mengajar</h2>
+      <p class="text-gray-400 text-xs sm:text-sm">Angkatan 8</p>
+    </div>
+  </a>
 
-        <!-- Info User Setelah Login -->
-        <div id="user-info" class="hidden flex items-center space-x-3">
-          <img id="nav-user-photo" src="" alt="Foto Profil" class="w-8 h-8 rounded-full border" />
-          <span id="nav-user-name" class="text-white font-medium"></span>
-          <button onclick="handleLogout()" class="text-white font-semibold px-3 py-1 rounded bg-red-600 hover:bg-red-700">
-            Logout
-          </button>
-        </div>
-      </div>
-    </nav>
+  <!-- Kanan: Login / Logout -->
+  <div class="flex items-center space-x-2 mt-2 sm:mt-0">
+    <!-- Tombol Login -->
+    <a id="login-btn" href="#"
+      onclick="handleGoogleLogin()"
+      class="text-white text-sm font-semibold px-3 py-1 rounded transition duration-100
+             bg-gradient-to-r from-blue-500 to-green-500 
+             hover:from-blue-700 hover:to-green-700">
+      Login Google
+    </a>
+
+    <!-- Info User Setelah Login -->
+    <div id="user-info" class="hidden flex items-center space-x-2">
+      <img id="nav-user-photo" src="" alt="Foto Profil" class="w-8 h-8 rounded-full border" />
+      <span id="nav-user-name" class="text-white text-sm font-medium"></span>
+      <button onclick="handleLogout()" class="text-white text-sm font-semibold px-3 py-1 rounded bg-red-600 hover:bg-red-700">
+        Logout
+      </button>
+    </div>
+  </div>
+</nav>
+
 
     <section
       class="relative bg h-screen flex flex-col justify-start items-center text-center pt-36 overflow-hidden"

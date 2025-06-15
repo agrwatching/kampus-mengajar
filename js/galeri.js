@@ -19,3 +19,19 @@ fetch("/partials/footer.html")
       mobileMenu.classList.add('translate-x-full');
       mobileMenu.classList.remove('translate-x-0');
     });
+
+function openLightbox(imageSrc, title, desc) {
+  const lightbox = document.getElementById('lightbox');
+  document.getElementById('lightbox-image').src = imageSrc;
+  document.getElementById('lightbox-title').innerText = title;
+  document.getElementById('lightbox-desc').innerText = desc;
+
+  lightbox.classList.remove('hidden');
+  lightbox.classList.add('flex'); // <== penting!
+}
+
+function closeLightbox() {
+  const lightbox = document.getElementById('lightbox');
+  lightbox.classList.add('hidden');
+  lightbox.classList.remove('flex');
+}
